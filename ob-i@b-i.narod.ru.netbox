@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetBox version="2.1">
+  <Sessions>
+    <Session name="ob-i@b-i.narod.ru">
+      <Version>2.3.0</Version>
+      <HostName>b-i.narod.ru</HostName>
+      <PortNumber>21</PortNumber>
+      <PingType>2</PingType>
+      <UserName>ob-i</UserName>
+      <FSProtocol>FTP</FSProtocol>
+      <RemoteDirectory>/images</RemoteDirectory>
+      <SFTPMaxVersion>0</SFTPMaxVersion>
+      <CodePage></CodePage>
+      <LoginType>1</LoginType>
+      <Password>A35C4148B7B53DBC27D69D0540A648F9B7ADDBE75AD38CED333E71353E713572323D2E3338722E296E6D3E356D6E6F68696A6B3129</Password>
+    </Session>
+  </Sessions>
+</NetBox>

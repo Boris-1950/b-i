@@ -1,0 +1,63 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.bracketSameLine": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "cSpell.words": [
+    "Аксёнова",
+    "Аксёново",
+    "Алёхин",
+    "антиглобализма",
+    "афгано",
+    "Власиха",
+    "Власихе",
+    "Власихи",
+    "возраст",
+    "глобализм",
+    "глобализма",
+    "Гюго",
+    "каждого",
+    "Катынь",
+    "Клаузевиц",
+    "Клаузевица",
+    "Клаузевицу",
+    "Королёва",
+    "Курлово",
+    "Мальцовых",
+    "Мещёры",
+    "мужчины",
+    "Новодворской",
+    "Нуждин",
+    "Окатово",
+    "особенному",
+    "Парахино",
+    "Перхушково",
+    "РВСН",
+    "Руссо",
+    "Салеев",
+    "Сулово",
+    "Тарабанчука",
+    "Тоффлер",
+    "Тоффлера",
+    "Уляхино",
+    "УССР",
+    "Чигорин",
+    "Экзюпеpи",
+    "этот",
+    "mentalis",
+    "Metrika"
+  ],
+  
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+
+}

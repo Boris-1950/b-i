@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetBox version="2.1">
+  <Sessions>
+    <Session name="oguu@guu.narod.ru">
+      <Version>2.3.0</Version>
+      <HostName>guu.narod.ru</HostName>
+      <PortNumber>21</PortNumber>
+      <PingType>2</PingType>
+      <UserName>oguu</UserName>
+      <FSProtocol>FTP</FSProtocol>
+      <SFTPMaxVersion>0</SFTPMaxVersion>
+      <CodePage></CodePage>
+      <LoginType>1</LoginType>
+      <Password>A35C4B4FB00DF403FE18F308FBD68799C63AC165801274333B29293B292972323D2E3338722E2930392A3F34353797D910A3</Password>
+    </Session>
+  </Sessions>
+</NetBox>

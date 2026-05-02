@@ -1,0 +1,97 @@
+/*Сброс стилей для обеспечения одинакового отображения */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.1;
+  color: black;
+}
+p {
+  font-size: 13px;
+  max-width: 90ch;
+  margin: 0px 5px 0px 5px;
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+} /* Стили для списков */
+ul,
+ol {
+  margin: 5px 5px 5px 25px;
+  padding: 5px;
+  color: green;
+  font-size: 14px;
+}
+.container {
+  max-width: 600px;
+  margin: 5px;
+  padding: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Стили для заголовков */
+  margin: 5px;
+  color: #222;
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+}
+h2 {
+  font-size: 1.1rem;
+}
+img {
+  /* Стили для изображений */
+  max-width: 100%; /*изображение не «вылезет» за экран на мобильных*/
+  height: auto; /*сохраняется пропорция изображения.*/
+  display: block; /* Убирает пробелы под изображением */
+}
+.leftimg {
+  float: left; /* Выравнивание по левому краю */
+  margin: 5px; /* Отступы вокруг картинки */
+}
+.rightimg {
+  float: right; /* Выравнивание по правому краю */
+  margin: 5px; /* Отступы вокруг картинки */
+}
+@media (max-width: 576px) {
+  img {
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Grid helper: bottom-align images inside columns so their bottoms line up */
+.images-bottom-align {
+  display: flex;
+  flex-wrap: wrap;
+}
+.images-bottom-align > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.images-bottom-align > [class*='col-'] img {
+  /* push image to the bottom of the column */
+  margin-top: auto;
+  display: block;
+}

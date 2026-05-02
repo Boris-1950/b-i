@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetBox version="2.1">
+  <Sessions>
+    <Session name="onm-i@nm-i.narod.ru">
+      <Version>2.3.0</Version>
+      <HostName>nm-i.narod.ru</HostName>
+      <PortNumber>21</PortNumber>
+      <PingType>2</PingType>
+      <UserName>onm-i</UserName>
+      <FSProtocol>FTP</FSProtocol>
+      <RemoteDirectory>/</RemoteDirectory>
+      <SFTPMaxVersion>0</SFTPMaxVersion>
+      <CodePage></CodePage>
+      <LoginType>1</LoginType>
+      <Password>A35C425098E9215E1F3A8D5CBA4BF72B33323171353231713572323D2E3338722E290A3D323D6D6E6F68696A6B09A0EF1F34</Password>
+    </Session>
+  </Sessions>
+</NetBox>

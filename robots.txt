@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+
+Sitemap: https://b-i.narod.ru/sitemap-blog-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-board-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-dir-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-faq-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-main-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-news-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-photo-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-publ-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-site-https-b-i.narod.ru.xml
+Sitemap: https://b-i.narod.ru/sitemap-video-https-b-i.narod.ru.xml

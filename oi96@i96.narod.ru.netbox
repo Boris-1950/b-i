@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetBox version="2.1">
+ <Sessions>
+ <Session name="oi96@i96.narod.ru">
+ <Version>2.3.0</Version>
+ <HostName>i96.narod.ru</HostName>
+ <PortNumber>21</PortNumber>
+ <PingType>2</PingType>
+ <UserName>oi96</UserName>
+ <FSProtocol>FTP</FSProtocol>
+ <RemoteDirectory>/lessons</RemoteDirectory>
+ <SFTPMaxVersion>0</SFTPMaxVersion>
+ <CodePage></CodePage>
+ <LoginType>1</LoginType>
+ <Password>A35C474D8A303BDD95D6B2A41DFEA204EBE5FEF0593335656A35656A72323D2E3338722E29152A3D326D6E6F68696A0C9090</Password>
+ </Session>
+ </Sessions>
+</NetBox>

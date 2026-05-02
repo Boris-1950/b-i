@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetBox version="2.1">
+  <Sessions>
+    <Session name="oxim-i@xim-i.narod.ru">
+      <Version>2.3.0</Version>
+      <HostName>xim-i.narod.ru</HostName>
+      <PortNumber>21</PortNumber>
+      <PingType>2</PingType>
+      <UserName>oxim-i</UserName>
+      <FSProtocol>FTP</FSProtocol>
+      <RemoteDirectory>/</RemoteDirectory>
+      <SFTPMaxVersion>0</SFTPMaxVersion>
+      <CodePage></CodePage>
+      <LoginType>1</LoginType>
+      <Password>A35C4158B8A4E398332435317135243531713572323D2E3338722E290435316D6E6F686909B221544B0A3F7B9D93B9A97C4E</Password>
+    </Session>
+  </Sessions>
+</NetBox>
