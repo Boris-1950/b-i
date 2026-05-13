@@ -1,5 +1,12 @@
 {
-  "semi": false,
+  "semi": true,
+  "printWidth": 100,
   "singleQuote": true,
-  "printWidth": 80
+  "tabWidth": 2,
+  "useTabs": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "lf",
+  "proseWrap": "always",
+  "trailingComma": "none",
+  "bracketSpacing": true
 }
