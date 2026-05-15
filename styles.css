@@ -63,6 +63,53 @@ img {
   height: auto; /*сохраняется пропорция изображения.*/
   display: block; /* Убирает пробелы под изображением */
 }
+.flag-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+.flag-row img {
+  display: block;
+  flex-shrink: 0;
+  max-height: 40px;
+  width: auto;
+}
+.toc {
+  margin: 1rem 0;
+}
+.toc-grid {
+  display: grid;
+  grid-template-columns: minmax(100px, 180px) minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: start;
+}
+.toc-grid nav,
+.toc-grid .toc-note {
+  min-width: 0;
+  padding: 0.25rem;
+}
+.toc-grid nav {
+  overflow-wrap: break-word;
+}
+.toc-grid nav ul {
+  margin: 0;
+  padding-left: 0.8rem;
+}
+.toc-grid nav li {
+  margin-bottom: 0.2rem;
+}
+.toc-grid .toc-note p {
+  margin-bottom: 0.4rem;
+}
+@media (max-width: 900px) {
+  .toc-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .leftimg {
   float: left; /* Выравнивание по левому краю */
   margin: 5px; /* Отступы вокруг картинки */
