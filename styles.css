@@ -65,6 +65,7 @@ img {
 }
 .flag-row {
   display: flex;
+  justify-content: center;   /* ← добавь это */
   flex-wrap: nowrap;
   gap: 0.25rem;
   align-items: center;
@@ -72,6 +73,7 @@ img {
   white-space: nowrap;
   padding: 0.5rem 0;
 }
+
 .flag-row img {
   display: block;
   flex-shrink: 0;
