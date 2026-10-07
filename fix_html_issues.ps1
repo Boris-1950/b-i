@@ -2,7 +2,7 @@ $report = Join-Path $PSScriptRoot 'html_report.txt'
 $log = Join-Path $PSScriptRoot 'fix_html_log.txt'
 if (-not (Test-Path $report)) { Write-Error "Report file not found: $report"; exit 1 }
 $paths = Get-Content -LiteralPath $report | Where-Object { $_ -like 'FILE:*' } | ForEach-Object { $_.Substring(6).Trim() }
-$ampRegex = [regex] '&(?!(?:nbsp|lt|gt|amp|quot|apos|#\d+|#x[0-9A-Fa-f]+);)'
+$ampRegex = [regex] '&(?!(?:[A-Za-z]+|#\d+|#x[0-9A-Fa-f]+);)'
 $xCompatRegex = [regex] '<meta\s+http-equiv="X-UA-Compatible"[^>]*>'
 $viewportRegex = [regex] '<meta\s+name="viewport"[^>]*>'
 function RemoveDuplicateMeta($text, $regex) {
@@ -65,7 +65,7 @@ foreach ($path in $paths) {
         if ($text -ne $old) { $changed = $true; Add-Content -LiteralPath $log "viewport duplicate removed: $path" }
     }
     $openCount = [regex]::Matches($text,'<a\b','IgnoreCase').Count
-    $closeCount = [regex]::Matches($text,'</a>','IgnoreCase').Count
+    $closeCount = [regex]::Matches($text,'</a\s*>','IgnoreCase').Count
     if ($openCount -ne $closeCount -or $changed) {
         $normalized = NormalizeHtmlWithCom($text)
         if ($normalized) {

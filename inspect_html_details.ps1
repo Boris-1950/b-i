@@ -57,8 +57,7 @@
     'vor.htm',
     'yakovlev.htm'
 )
-$ampRegex = [regex] '&(?!(?:nbsp|lt|gt|amp|quot|apos|#\d+|#x[0-9A-Fa-f]+);)'
-$linkRegex = [regex] '<a\b|</a>'
+$ampRegex = [regex] '&(?!(?:[A-Za-z]+|#\d+|#x[0-9A-Fa-f]+);)'
 foreach($rel in $patterns){
     $path = Join-Path $PWD $rel
     if(-not (Test-Path $path)){
@@ -67,9 +66,8 @@ foreach($rel in $patterns){
     }
     $text = Get-Content -Raw -Encoding utf8 $path
     $amps = $ampRegex.Matches($text)
-    $links = $linkRegex.Matches($text)
     $opens = [regex]::Matches($text, '<a\b', 'IgnoreCase').Count
-    $closes = [regex]::Matches($text, '</a>', 'IgnoreCase').Count
+    $closes = [regex]::Matches($text, '</a\s*>', 'IgnoreCase').Count
     if($amps.Count -gt 0 -or $opens -ne $closes){
         Write-Host "=== $rel ==="
         Write-Host " raw_amp=$($amps.Count) opens=$opens closes=$closes"
@@ -77,7 +75,7 @@ foreach($rel in $patterns){
             foreach($m in $amps){
                 $line = ($text.Substring(0, $m.Index) -split "`n").Count
                 $snippet = $text.Substring([math]::Max(0,$m.Index-20), [math]::Min(80, $m.Length + 40)).Replace("`n", ' ')
-                Write-Host "  RAW $line: $snippet"
+                Write-Host "  RAW ${line}: $snippet"
             }
         }
         if($opens -ne $closes){
@@ -85,7 +83,7 @@ foreach($rel in $patterns){
             $i=0
             foreach($m in [regex]::Matches($text, '<a\b|</a>', 'IgnoreCase')){
                 $line = ($text.Substring(0, $m.Index) -split "`n").Count
-                Write-Host "   $line: $($m.Value) -> $($text.Substring($m.Index, [math]::Min(120, $text.Length-$m.Index)).Split("`n")[0])"
+                Write-Host "   ${line}: $($m.Value) -> $($text.Substring($m.Index, [math]::Min(120, $text.Length-$m.Index)).Split("`n")[0])"
                 $i++
                 if($i -ge 20){break}
             }
